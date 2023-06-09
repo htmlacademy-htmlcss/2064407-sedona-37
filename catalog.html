@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -38,7 +39,7 @@
             </a>
           </li>
         </ul>
-        <a class="button nav-button button-modal" href="#">Хочу сюда</a>
+        <a class="nav-button button button-modal" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
@@ -58,7 +59,7 @@
         <h2 class="visually-hidden">Фильтр по гостиницам</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filter-group filter-group-check">
-            <legend class="filter-title">Инфраструктура:</legend>
+            <legend class="filter-group-title">Инфраструктура:</legend>
             <ul class="filter-list control-list list-reset">
               <li class="control-item">
                 <input class="control-input" id="pool" name="pool" type="checkbox" checked>
@@ -75,24 +76,24 @@
             </ul>
           </fieldset>
           <fieldset class="filter-group filter-group-radio">
-            <legend class="filter-title">Тип Жилья:</legend>
+            <legend class="filter-group-title">Тип Жилья:</legend>
             <ul class="filter-list control-list list-reset">
               <li class="control-item">
-                <input class="control-input" id="hotel" name="hotel" type="radio" value="hotel" checked>
+                <input class="control-input" id="hotel" name="type of housing" type="radio" value="hotel" checked>
                 <label class="control-label" for="hotel">Гостиница</label>
               </li>
               <li class="control-item">
-                <input class="control-input" id="motel" name="hotel" type="radio" value="motel">
+                <input class="control-input" id="motel" name="type of housing" type="radio" value="motel">
                 <label class="control-label" for="motel">Мотель</label>
               </li>
               <li class="control-item">
-                <input class="control-input" id="apartments" name="hotel" type="radio" value="apartments">
+                <input class="control-input" id="apartments" name="type of housing" type="radio" value="apartments">
                 <label class="control-label" for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-group filter-group-range">
-            <legend class="filter-title">Стоимость, ₽:</legend>
+            <legend class="filter-group-title">Стоимость, ₽:</legend>
             <span class="visually-hidden">Тут будет фильтр полосы</span>
           </fieldset>
           <fieldset class="filter-group filter-group-buttons">
