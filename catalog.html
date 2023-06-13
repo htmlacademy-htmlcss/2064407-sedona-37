@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -38,7 +39,7 @@
             </a>
           </li>
         </ul>
-        <a class="button nav-button button-modal" href="#">Хочу сюда</a>
+        <a class="nav-button button button-modal" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
@@ -58,7 +59,7 @@
         <h2 class="visually-hidden">Фильтр по гостиницам</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filter-group filter-group-check">
-            <legend class="filter-title">Инфраструктура:</legend>
+            <legend class="filter-group-title">Инфраструктура:</legend>
             <ul class="filter-list control-list list-reset">
               <li class="control-item">
                 <input class="control-input" id="pool" name="pool" type="checkbox" checked>
@@ -75,24 +76,24 @@
             </ul>
           </fieldset>
           <fieldset class="filter-group filter-group-radio">
-            <legend class="filter-title">Тип Жилья:</legend>
+            <legend class="filter-group-title">Тип Жилья:</legend>
             <ul class="filter-list control-list list-reset">
               <li class="control-item">
-                <input class="control-input" id="hotel" name="hotel" type="radio" value="hotel" checked>
+                <input class="control-input" id="hotel" name="type of housing" type="radio" value="hotel" checked>
                 <label class="control-label" for="hotel">Гостиница</label>
               </li>
               <li class="control-item">
-                <input class="control-input" id="motel" name="hotel" type="radio" value="motel">
+                <input class="control-input" id="motel" name="type of housing" type="radio" value="motel">
                 <label class="control-label" for="motel">Мотель</label>
               </li>
               <li class="control-item">
-                <input class="control-input" id="apartments" name="hotel" type="radio" value="apartments">
+                <input class="control-input" id="apartments" name="type of housing" type="radio" value="apartments">
                 <label class="control-label" for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-group filter-group-range">
-            <legend class="filter-title">Стоимость, ₽:</legend>
+            <legend class="filter-group-title">Стоимость, ₽:</legend>
             <span class="visually-hidden">Тут будет фильтр полосы</span>
           </fieldset>
           <fieldset class="filter-group filter-group-buttons">
@@ -130,7 +131,7 @@
         <ul class="hotels-list list-reset">
           <li class="hotels-item">
             <figure class="hotels-image">
-              <img src="img/catalog/amararesort.jpg" width="300" height="212" alt="Отель Amara Resort & Spa">
+              <img src="img/catalog/amararesort&spa.jpg" width="300" height="212" alt="Отель Amara Resort & Spa">
             </figure>
             <a class="hotels-link" href="#">
               <h3 class="hotels-title">Amara Resort &amp; Spa</h3>
@@ -144,7 +145,7 @@
           </li>
           <li class="hotels-item">
             <figure class="hotels-image">
-              <img src="img/catalog/villaspocodiablo.jpg" width="300" height="212" alt="Отель Villas at Poco Diablo">
+              <img src="img/catalog/vilaspocodiablo.jpg" width="300" height="212" alt="Отель Villas at Poco Diablo">
             </figure>
             <a class="hotels-link" href="#">
               <h3 class="hotels-title">Villas at Poco Diablo</h3>
@@ -158,7 +159,7 @@
           </li>
           <li class="hotels-item">
             <figure class="hotels-image">
-              <img src="img/catalog/desertquail.jpg" width="300" height="212" alt="Отель Desert Quail Inn">
+              <img src="img/catalog/desertquailinn.jpg" width="300" height="212" alt="Отель Desert Quail Inn">
             </figure>
             <a class="hotels-link" href="#">
               <h3 class="hotels-title">Desert Quail Inn</h3>
@@ -172,7 +173,7 @@
           </li>
           <li class="hotels-item">
             <figure class="hotels-image">
-              <img src="img/catalog/greentree.jpg" width="300" height="212" alt="Отель GreenTree Inn">
+              <img src="img/catalog/greentreeinn.jpg" width="300" height="212" alt="Отель GreenTree Inn">
             </figure>
             <a class="hotels-link" href="#">
               <h3 class="hotels-title">GreenTree Inn</h3>
@@ -185,7 +186,7 @@
             <span class="hotel-rating">Рейтинг: 5,0</span>
           </li>
         </ul>
-        <ul class="pagination-list">
+        <ul class="pagination-list list-reset">
           <li class="pagination-item">
             <a class="pagination-link pagination-link-current" href="#" aria-current="page">1</a>
           </li>
@@ -222,26 +223,26 @@
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте</span>
-            <img src="img/vk.svg" width="24" height="14" alt="Логотип VK">
+            <img src="img/icon-vk.svg" width="24" height="14" alt="Логотип VK">
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
-            <img src="img/telegram.svg" width="18" height="15.1" alt="Логотип Telegram">
+            <img src="img/icon-telegram.svg" width="18" height="15" alt="Логотип Telegram">
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">YouTube</span>
-            <img src="img/youtube.svg" width="22" height="17" alt="Логотип Youtube">
+            <img src="img/icon-youtube.svg" width="22" height="17" alt="Логотип Youtube">
           </a>
         </li>
       </ul>
       <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="footer-dev" href="https://htmlacademy.ru/">
         <span class="visually-hidden">Сайт разработчика</span>
-        <img src="img/htmlacademy.svg" width="114.9" height="32.9" alt="Логотип HTMLAcademy">
+        <img src="img/logo-htmlacademy.svg" width="115" height="33" alt="Логотип HTMLAcademy">
       </a>
     </footer>
   </body>
