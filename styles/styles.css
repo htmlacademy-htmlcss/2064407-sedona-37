@@ -457,6 +457,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: 70px;
+  margin-right: 70px;
+  justify-content: space-between;
+}
+
+.hotels-item{
+  width: 340px;
+  height: 438px;
 }
 
 .hotels-link {
