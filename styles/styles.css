@@ -75,6 +75,7 @@ img {
   border: 0;
 
   clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
 }
 
@@ -261,10 +262,14 @@ img {
 }
 
 .nav-link-current {
+  -webkit-text-decoration: 2px;
   text-decoration: 2px;
 
+  -webkit-text-decoration-color: #756257;
   text-decoration-color: #756257;
+  -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
   text-decoration-style: solid;
   text-underline-offset: 24px;
 }
@@ -717,7 +722,6 @@ img {
   border-radius: 4px;
 
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -797,6 +801,7 @@ img {
 .range-input::-webkit-inner-spin-button {
   margin: 0;
 
+  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -920,7 +925,6 @@ img {
   border-radius: 4px;
 
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
