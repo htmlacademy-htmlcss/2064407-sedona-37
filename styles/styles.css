@@ -1098,7 +1098,7 @@ img {
 }
 
 .hotels-rating-star-2 {
-  width: 50px;
+  width: 45px;
 }
 
 .hotel-rating {
@@ -1236,6 +1236,8 @@ img {
 .phone:hover,
 .phone:focus {
   color: #756157;
+
+  outline: none;
 }
 
 .phone:active {
@@ -1287,7 +1289,7 @@ img {
 .modal {
   position: relative;
 
-  margin: 100px auto auto;
+  margin: auto;
   padding: 64px 70px;
 
   background-color: #ffffff;
