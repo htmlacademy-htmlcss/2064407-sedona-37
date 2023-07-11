@@ -123,9 +123,12 @@ img {
   background-color: #82b3d3;
 }
 
-.button-light:active {
-  color: rgba(255, 255, 255, 0.3);
+.button-light:hover,
+.button-light:focus {
+  background-color: #68a2ca;
+}
 
+.button-light:active {
   background-color: #82b3d3;
 }
 
@@ -159,11 +162,6 @@ img {
   pointer-events: none;
 }
 
-.button-light:hover,
-.button-light:focus {
-  background-color: #68a2ca;
-}
-
 .form-input {
   width: 100%;
   height: 48px;
@@ -182,6 +180,20 @@ img {
 
 .form-input::placeholder {
   opacity: 0.6;
+}
+
+.form-input:hover,
+.form-input:focus,
+.form-input:active {
+  background-color: #e6e6e6;
+}
+
+.form-input-valid {
+  border-color: #00eeda;
+}
+
+.form-input-invalid {
+  border-color: #e70707;
 }
 
 .page-title {
@@ -293,16 +305,16 @@ img {
   text-decoration: none;
 }
 
-.navigation-icon {
+.user-link svg {
   fill: currentColor;
 }
 
-.navigation-icon:hover,
-.navigation-icon:focus {
+.user-link:hover,
+.user-link:focus {
   color: #756157;
 }
 
-.navigation-icon:active {
+.user-link:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -377,7 +389,7 @@ img {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item:nth-child(even) {
+.advantages-item:nth-child(even):not(.advantages-item-full) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -624,12 +636,12 @@ img {
   background-position: center;
 }
 
-.breadcrumbs-link-home:hover,
-.breadcrumbs-link-home:focus {
+.breadcrumbs-link:hover,
+.breadcrumbs-link:focus {
   opacity: 0.6;
 }
 
-.breadcrumbs-link-home:active {
+.breadcrumbs-link:active {
   opacity: 0.4;
 }
 
@@ -678,7 +690,8 @@ img {
 }
 
 .filter-group-range {
-  width: 288px;
+  width: 100%;
+  max-width: 288px;
   margin-left: auto;
 }
 
@@ -909,7 +922,7 @@ img {
 .sorting-select {
   width: 292px;
   height: 49px;
-  padding: 5px 0 5px 18px;
+  padding: 5px 45px 5px 18px;
 
   font-weight: 400;
   font-size: 18px;
@@ -1010,6 +1023,8 @@ img {
 
 .hotels-item {
   display: grid;
+  align-content: start;
+  align-items: start;
   min-height: 438px;
   padding: 20px;
 
@@ -1021,6 +1036,7 @@ img {
 }
 
 .hotels-image {
+  height: 212px;
   margin: 0;
 
   grid-column: 1/-1;
@@ -1197,6 +1213,7 @@ img {
 .social-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: start;
   align-items: center;
 }
 
