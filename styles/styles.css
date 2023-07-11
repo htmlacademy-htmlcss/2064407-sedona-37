@@ -75,6 +75,7 @@ img {
   border: 0;
 
   clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
 }
 
@@ -122,9 +123,12 @@ img {
   background-color: #82b3d3;
 }
 
-.button-light:active {
-  color: rgba(255, 255, 255, 0.3);
+.button-light:hover,
+.button-light:focus {
+  background-color: #68a2ca;
+}
 
+.button-light:active {
   background-color: #82b3d3;
 }
 
@@ -158,11 +162,6 @@ img {
   pointer-events: none;
 }
 
-.button-light:hover,
-.button-light:focus {
-  background-color: #68a2ca;
-}
-
 .form-input {
   width: 100%;
   height: 48px;
@@ -181,6 +180,20 @@ img {
 
 .form-input::placeholder {
   opacity: 0.6;
+}
+
+.form-input:hover,
+.form-input:focus,
+.form-input:active {
+  background-color: #e6e6e6;
+}
+
+.form-input-valid {
+  border-color: #00eeda;
+}
+
+.form-input-invalid {
+  border-color: #e70707;
 }
 
 .page-title {
@@ -220,7 +233,7 @@ img {
   display: block;
   width: 140px;
   height: 70px;
-  margin-right: 28px;
+  margin-right: 24px;
   margin-bottom: -6px;
 }
 
@@ -261,12 +274,16 @@ img {
 }
 
 .nav-link-current {
+  -webkit-text-decoration: 2px;
   text-decoration: 2px;
 
+  -webkit-text-decoration-color: #756257;
   text-decoration-color: #756257;
+  -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
   text-decoration-style: solid;
-  text-underline-offset: 27px;
+  text-underline-offset: 24px;
 }
 
 .user-list {
@@ -283,29 +300,28 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
-  padding-top: 13px;
 
   color: #000000;
   text-decoration: none;
 }
 
-.navigation-icon {
+.user-link svg {
   fill: currentColor;
 }
 
-.navigation-icon:hover,
-.navigation-icon:focus {
+.user-link:hover,
+.user-link:focus {
   color: #756157;
 }
 
-.navigation-icon:active {
+.user-link:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
 .user-favorites-num {
   position: absolute;
-  top: 0;
-  right: 2px;
+  top: 2px;
+  right: 4px;
 
   display: inline-block;
   padding: 5px;
@@ -328,7 +344,8 @@ img {
 }
 
 .hero {
-  padding: 60px 70px;
+  margin-bottom: 20px;
+  padding: 50px 70px 83px;
 
   text-align: center;
   color: #ffffff;
@@ -354,6 +371,7 @@ img {
 }
 
 .description {
+  margin-bottom: 40px;
   padding: 50px 70px;
 }
 
@@ -371,7 +389,7 @@ img {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item:nth-child(even) {
+.advantages-item:nth-child(even):not(.advantages-item-full) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -395,13 +413,13 @@ img {
 .advantages-content {
   max-width: 400px;
   min-height: 385px;
-  padding: 115px 82px 70px;
+  padding: 112px 82px 70px;
 
   text-align: center;
 }
 
 .advantages-container .advantages-content {
-  padding-top: 105px;
+  padding-top: 102px;
 }
 
 .advantages-title {
@@ -409,7 +427,7 @@ img {
 
   width: 182px;
   margin: 0 auto 30px;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
 
   font-size: 24px;
   line-height: 28px;
@@ -449,7 +467,7 @@ img {
 }
 
 .description-services {
-  padding: 64px 70px;
+  padding: 64px 70px 20px;
 }
 
 .services-list {
@@ -509,7 +527,7 @@ img {
 }
 
 .search-text {
-  margin-bottom: 54px;
+  margin-bottom: 53px;
 }
 
 .search-button {
@@ -520,6 +538,7 @@ img {
 }
 
 .subscribe {
+  margin-bottom: 5px;
   padding: 96px 70px 104px;
 }
 
@@ -553,7 +572,7 @@ img {
 }
 
 .subscribe-input {
-  height: 52px;
+  height: 100%;
 
   border-radius: 4px 0 0 4px;
 }
@@ -583,7 +602,7 @@ img {
 }
 
 .filter-title {
-  margin: 0 0 8px;
+  margin: 0 0 7px;
 
   font-size: 60px;
   line-height: 78px;
@@ -617,12 +636,12 @@ img {
   background-position: center;
 }
 
-.breadcrumbs-link-home:hover,
-.breadcrumbs-link-home:focus {
+.breadcrumbs-link:hover,
+.breadcrumbs-link:focus {
   opacity: 0.6;
 }
 
-.breadcrumbs-link-home:active {
+.breadcrumbs-link:active {
   opacity: 0.4;
 }
 
@@ -636,7 +655,7 @@ img {
   content: "";
   position: absolute;
   top: 50%;
-  right: -17px;
+  right: -18px;
 
   display: block;
   width: 8px;
@@ -662,7 +681,8 @@ img {
 }
 
 .filter-group-title {
-  margin-bottom: 32px;
+  margin-bottom: 33px;
+  padding: 0;
 
   font-weight: 700;
   font-size: 20px;
@@ -670,7 +690,8 @@ img {
 }
 
 .filter-group-range {
-  width: 288px;
+  width: 100%;
+  max-width: 288px;
   margin-left: auto;
 }
 
@@ -714,8 +735,7 @@ img {
   border-radius: 4px;
 
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .control-input[type="checkbox"]:checked {
@@ -794,6 +814,7 @@ img {
 .range-input::-webkit-inner-spin-button {
   margin: 0;
 
+  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -888,7 +909,7 @@ img {
 .sorting {
   display: grid;
   align-items: center;
-  padding: 30px 70px;
+  padding: 49px 70px 40px;
 
   gap: 20px 70px;
   grid-template-columns: 1fr auto auto;
@@ -900,7 +921,8 @@ img {
 
 .sorting-select {
   width: 292px;
-  padding: 5px;
+  height: 49px;
+  padding: 5px 45px 5px 18px;
 
   font-weight: 400;
   font-size: 18px;
@@ -911,13 +933,12 @@ img {
   background-color: transparent;
   background-image: url("../img/select.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 13px center;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
 
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .sorting-select:hover {
@@ -992,16 +1013,18 @@ img {
 
 .hotels-list {
   display: grid;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
 
   border-bottom: 1px solid #e6e6e6;
 
-  gap: 20px;
+  gap: 18px;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .hotels-item {
   display: grid;
+  align-content: start;
+  align-items: start;
   min-height: 438px;
   padding: 20px;
 
@@ -1013,6 +1036,7 @@ img {
 }
 
 .hotels-image {
+  height: 212px;
   margin: 0;
 
   grid-column: 1/-1;
@@ -1090,12 +1114,12 @@ img {
 }
 
 .hotels-rating-star-2 {
-  width: 50px;
+  width: 45px;
 }
 
 .hotel-rating {
   display: inline-block;
-  padding: 10px;
+  padding: 8px;
 
   font-size: 16px;
   line-height: 20px;
@@ -1189,6 +1213,7 @@ img {
 .social-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: start;
   align-items: center;
 }
 
@@ -1228,6 +1253,8 @@ img {
 .phone:hover,
 .phone:focus {
   color: #756157;
+
+  outline: none;
 }
 
 .phone:active {
@@ -1279,7 +1306,7 @@ img {
 .modal {
   position: relative;
 
-  margin: 100px auto auto;
+  margin: auto;
   padding: 64px 70px;
 
   background-color: #ffffff;
