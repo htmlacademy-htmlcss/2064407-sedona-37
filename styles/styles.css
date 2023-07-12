@@ -76,7 +76,7 @@ img {
 
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 
 .list-reset {
@@ -275,14 +275,14 @@ img {
 
 .nav-link-current {
   -webkit-text-decoration: 2px;
-  text-decoration: 2px;
+          text-decoration: 2px;
 
   -webkit-text-decoration-color: #756257;
-  text-decoration-color: #756257;
+          text-decoration-color: #756257;
   -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
+          text-decoration-line: underline;
   -webkit-text-decoration-style: solid;
-  text-decoration-style: solid;
+          text-decoration-style: solid;
   text-underline-offset: 24px;
 }
 
@@ -411,6 +411,7 @@ img {
 }
 
 .advantages-content {
+  width: 100%;
   max-width: 400px;
   min-height: 385px;
   padding: 112px 82px 70px;
@@ -467,7 +468,11 @@ img {
 }
 
 .description-services {
-  padding: 64px 70px 20px;
+  padding: 64px 70px 22px;
+}
+
+.description-services .page-title {
+  margin-bottom: 20px;
 }
 
 .services-list {
@@ -487,8 +492,7 @@ img {
 .services-content {
   width: 400px;
   min-height: 385px;
-  padding: 183px 85px 81px;
-  padding-top: 183px;
+  padding: 185px 85px 81px;
 
   text-align: center;
 
@@ -735,7 +739,7 @@ img {
   border-radius: 4px;
 
   -webkit-appearance: none;
-  appearance: none;
+          appearance: none;
 }
 
 .control-input[type="checkbox"]:checked {
@@ -815,7 +819,7 @@ img {
   margin: 0;
 
   -webkit-appearance: none;
-  appearance: none;
+          appearance: none;
 }
 
 .range-input[type="number"] {
@@ -938,7 +942,7 @@ img {
   border-radius: 4px;
 
   -webkit-appearance: none;
-  appearance: none;
+          appearance: none;
 }
 
 .sorting-select:hover {
