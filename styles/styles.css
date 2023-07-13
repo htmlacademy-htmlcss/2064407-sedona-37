@@ -30,6 +30,7 @@ html {
 body {
   height: 100%;
   margin: 0;
+  padding: 0 40px;
 
   font-weight: 400;
   font-size: 18px;
@@ -45,7 +46,6 @@ img {
   height: auto;
 
   object-fit: cover;
-  object-position: center;
 }
 
 .wrapper {
@@ -76,7 +76,7 @@ img {
 
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
 .list-reset {
@@ -275,14 +275,14 @@ img {
 
 .nav-link-current {
   -webkit-text-decoration: 2px;
-          text-decoration: 2px;
+  text-decoration: 2px;
 
   -webkit-text-decoration-color: #756257;
-          text-decoration-color: #756257;
+  text-decoration-color: #756257;
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
+  text-decoration-style: solid;
   text-underline-offset: 24px;
 }
 
@@ -459,6 +459,10 @@ img {
 
 .advantages-text {
   margin: 0;
+}
+
+.advantages-image {
+  max-width: 800px;
 }
 
 .advantages-image img {
@@ -714,7 +718,6 @@ img {
   display: grid;
   align-items: start;
 
-  gap: 16px;
   grid-template-columns: auto 1fr;
 }
 
@@ -723,6 +726,8 @@ img {
 }
 
 .control-label {
+  padding-left: 16px;
+
   font-size: 18px;
   line-height: 23px;
 }
@@ -739,7 +744,7 @@ img {
   border-radius: 4px;
 
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .control-input[type="checkbox"]:checked {
@@ -819,7 +824,7 @@ img {
   margin: 0;
 
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .range-input[type="number"] {
@@ -942,7 +947,7 @@ img {
   border-radius: 4px;
 
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .sorting-select:hover {
